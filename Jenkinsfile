@@ -7,12 +7,3 @@ podTemplate {
         }
     }
 }
-
-podTemplate {
-    node(POD_LABEL) {
-      stage("Test"){
-        checkout scm
-        sh 'bash script.sh'
-      }
-    }
-}
